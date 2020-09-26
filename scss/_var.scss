@@ -1,0 +1,12 @@
+@mixin bg-gradient {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@mixin align($direction) {
+    @if $direction == 'center' {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+$jam: 'Bai Jamjuree', sans-serif;

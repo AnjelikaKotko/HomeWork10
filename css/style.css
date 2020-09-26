@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.header {
+  font-family: "Bai Jamjuree", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+.header h1 {
+  font-size: 2.5em;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  background: linear-gradient(90deg, #80688E 0%, #4F586A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 16px;
+}
+@media (max-width: 576px) {
+  .header h1 {
+    font-size: 48px;
+  }
+}
+.header p {
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  background: linear-gradient(90deg, #9BAAFA 0%, #367BF5 100%);
+  max-width: 700px;
+  margin: 0 auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+@media (max-width: 576px) {
+  .container {
+    padding: 36px 12px;
+  }
+}
+
+.item-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 48px;
+}
+@media (max-width: 576px) {
+  .item-wrap {
+    margin-top: 24px;
+  }
+}
+.item-wrap .item {
+  width: calc((100% - 48px) / 3);
+  display: flex;
+  min-height: 224px;
+  padding: 16px;
+  margin-bottom: 32px;
+}
+@media (max-width: 992px) {
+  .item-wrap .item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+@media (max-width: 576px) {
+  .item-wrap .item {
+    width: 100%;
+    margin-bottom: 16px;
+    min-height: auto;
+    padding: 8px;
+  }
+}
+.item-wrap .item:hover {
+  box-shadow: 0px 4px 8px rgba(54, 123, 245, 0.16), 0px 2px 4px rgba(54, 123, 245, 0.24);
+  border-radius: 8px;
+}
+.item-wrap .item:active {
+  background: #E6EFFF;
+}
+.item-wrap .item:active .icon {
+  background: #FFF;
+}
+.item-wrap .item .icon {
+  height: 48px;
+  min-width: 48px;
+  background: #E6EFFF;
+  border-radius: 99px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+}
+.item-wrap .item .content {
+  max-width: 272px;
+}
+.item-wrap .item .content h4 {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.87);
+}
+.item-wrap .item .content p {
+  font-family: Roboto;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.15px;
+  color: #5E6366;
+}
+
+/*# sourceMappingURL=style.css.map */
